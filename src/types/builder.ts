@@ -49,7 +49,7 @@ export function Builder<T>(
     overrideValues = templateOrOverride
   }
 
-  const built: Record<string, unknown> = template ? Object.assign({}, template) : {}
+  const built: Record<string, unknown> = template ? { ...template } : {}
 
   const builder = new Proxy(
     {},
