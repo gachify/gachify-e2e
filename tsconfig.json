@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "strictNullChecks": true,
+    "target": "es5",
+    "lib": ["es5", "dom"],
+    "types": ["cypress", "node"],
+    "paths": {
+      "@utils": ["src/support/utils"],
+      "@selectors": ["src/constants/selectors"],
+      "@texts": ["src/constants/texts"],
+      "@routes": ["src/constants/routes"]
+    }
+  },
+  "include": ["**/*.ts"]
+}
